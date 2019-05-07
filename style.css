@@ -1,0 +1,101 @@
+*{
+	font-size: 3vh;
+	background-color: white;	
+	font-family: 'Lato', sans-serif;
+}
+body{
+	overflow: hidden;
+}	
+footer{
+	background-color: white;
+	position: fixed;
+	bottom: 0;
+}
+nav, footer{
+	background-color: transparent;
+}
+button{
+	background-color: hsla(255, 95%, 3%, 3);
+	color: lime;
+	border: 0;
+	box-shadow: 0 0 3px #00FF00;
+	border-radius: 10px;
+	font-size: .8em;
+}
+#menu{
+	z-index: 99;
+	position: fixed;
+	width: 100vw;
+	background-color: lime;
+}
+#content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#moon{
+	position: absolute;
+	transform: translateY(-50%) translateX(-50%);
+	top: 0;
+	transition: .1s;
+	background-color: lime;
+	width: 40vh;
+	height: 40vh;
+	box-shadow: 10px 10px 50px lime;
+	border-radius: 50%;
+}
+#game{
+	position: absolute;
+	top: 0;
+}
+#tool{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 5vh;
+}
+#tool>div{
+		height: 100%;
+		width: 9.5%;
+		display: inline-block;
+		box-shadow: 0 0 1px rgba(255, 255, 255, .2);
+		border: 1px white solid;
+		padding: 0;
+		float: right;
+}
+
+#red{
+	background-color: #FF0000;
+}
+#green{
+	background-color: #00FF00;
+}
+#blue{
+	background-color: #0000FF;
+}
+#pink{
+	background-color: #FF00FF;
+}
+#white{
+	background-color: #FFFFFF;
+}
+#miku{
+	background-color: #00FFFF;
+}
+#yellow{
+	background-color: #FFFF00;
+}
+#black{
+	background-color: #000000;
+}
+
+@media only screen and (max-width: 500px) {
+	#tool {
+		height: 10vh;
+	}
+	#tool>div{
+		height: 50%;
+		width: 19%;
+	}
+}
